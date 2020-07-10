@@ -1,5 +1,4 @@
 #include <iostream>
-#include "../lib/col.h"
 #include "../lib/lib.h"
 #include "../def/def.h"
 
