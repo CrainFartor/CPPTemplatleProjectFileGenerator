@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS= -Wall
+CFLAGS= -Wall -Wno-missing-braces -Wno-discarded-qualifiers
 DEFS_FOLDER=./def
 LIBS_FOLDER=./lib
 LIBS=lib.c template_strings.c

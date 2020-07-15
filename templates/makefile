@@ -1,16 +1,13 @@
 CC=g++
 CFLAGS= -Wall
-DEFS_FOLDER=./def
-LIBS_FOLDER=./lib
-LIBS=lib.cpp
-EXE=
-MAIN=main.cpp
-SRC_FOLDER=./src
+LIBS=./lib/lib.cpp
+MAIN=./src/main.cpp
+EXE=EXE
 
 default: main
 
-main: $(SRC_FOLDER)/$(MAIN)  $(DEFS_FOLDER)/*.h
-	$(CC) $(CFLAGS) -o $(EXE) $(SRC_FOLDER)/$(MAIN) $(LIBS_FOLDER)/$(LIBS)
+main:
+	$(CC) $(CFLAGS) -o $(EXE) $(MAIN) $(LIBS)
 
 clean:
 	rm -f $(EXE)
